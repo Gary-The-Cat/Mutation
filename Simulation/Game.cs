@@ -21,7 +21,11 @@ namespace Game
         public Game()
         {
             // Create the main window
-            window = new RenderWindow(new VideoMode(Configuration.Width, Configuration.Height), "Simulation", Styles.Fullscreen);
+            window = new RenderWindow(
+                new VideoMode(Configuration.Width, Configuration.Height), 
+                "Simulation", 
+                Styles.Fullscreen,
+                new ContextSettings() { AntialiasingLevel = 8 });
 
             // Set our frame rate to 60fps so the screen is responsive.
             window.SetFramerateLimit(60);

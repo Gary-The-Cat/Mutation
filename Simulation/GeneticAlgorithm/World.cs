@@ -7,7 +7,7 @@ namespace Game.GeneticAlgorithm
 {
     public class World
     {
-        public const int PopulationCount = 10;
+        public const int PopulationCount = 100;
         private static List<double> cumulativeProportions;
         private static Random random = new Random();
 
